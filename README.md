@@ -1,6 +1,6 @@
 # TSP Solver and Analyzer
 
-This is an academic research project focused on implementing, comparing, and analyzing various heuristic and meta-heuristic algorithms for solving the Traveling Salesman Problem (TSP). The project provides a modular framework for adding new solving algorithms, running automated test batches, and analyzing the results.
+This is an academic research project focused on implementing, comparing, and analyzing various heuristic and meta-heuristic algorithms for solving the [Traveling Salesman Problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem) (TSP). The project provides a modular framework for adding new solving algorithms, running automated test batches, and analyzing the results.
 
 
 ## Special Features
@@ -88,9 +88,9 @@ python main.py --dataset berlin52 --algorithms ga nn 2opt --runs 5
 
 The `solve_tsp.sh` script provides a powerful pipeline for automated testing with the following features:
 
-*   **Auto-Analyzer**: It automatically chains `analysis.py` immediately after `main.py` finishes, passing the correct results file dynamically.
-*   **Timestamped Archiving**: Instead of overwriting results, it creates a uniquely timestamped CSV for every run (e.g., `runs_20260324_180715.csv`), giving you a safe history of all your experiments.
-*   **Session Logging**: It uses `tee` to capture all terminal output and saves it to a `.txt` log file. This is invaluable for reviewing console output for anomalies later.
+*   **Auto-Analyzer**: It chains `analysis.py` immediately after `main.py` finishes, passing the correct results file dynamically.
+*   **Timestamped Archiving**: Instead of overwriting results, it creates a uniquely timestamped CSV for every run.
+*   **Session Logging**: It uses `tee` to capture all terminal output and saves it to a `.txt` log file.
 *   **Error Handling**: If `main.py` crashes, the script catches the error and stops before trying to run the analyzer on broken data.
 *   **Total Execution Timer**: It calculates and displays how long the entire experiment suite took to complete.
 
