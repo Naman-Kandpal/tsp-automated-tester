@@ -1,0 +1,25 @@
+# Ignore Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environment
+.venv/
+venv/
+ENV/
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+
+# Ignore results directory
+results/
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore log and data files
+*.txt
+*.csv
